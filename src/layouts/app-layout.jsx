@@ -12,7 +12,7 @@ const AppLayout = () => {
             <Header />
             <Outlet />
         </main>
-        <div className='p-10 text-center bg-black text-white mt-10 '>All rights reserved @2025</div>
+        <div className='p-10 text-center bg-transparent text-white mt-10 '>All rights reserved @2025</div>
     </div>
   )
 }
