@@ -30,7 +30,7 @@ const JobCard = ({job, isMyJob= false,savedInit= false, onJobSaved= () => {}}) =
     if(savedJobs!==undefined)setSaved(savedJobs?.length > 0)
    },[savedJobs])
   return (
-    <Card>
+    <Card className = 'flex flex-col'>
         <CardHeader>
             <CardTitle className='flex  justify-between font-bold'>
                 {job.title}

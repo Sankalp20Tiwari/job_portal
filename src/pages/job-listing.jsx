@@ -87,8 +87,6 @@ const JobListing = () => {
                 {State.getStatesOfCountry('IN').map(({name,index})=>{
                   return  (<SelectItem key={index} value={name}>{name}</SelectItem>)
                 })}
-               
-                
               </SelectGroup>
             </SelectContent>
           </Select>
