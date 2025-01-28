@@ -9,7 +9,6 @@ import useFetch from '@/hooks/use-fetch'
 import { useUser } from '@clerk/clerk-react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import MDEditor from '@uiw/react-md-editor'
-
 import { State } from 'country-state-city'
 import React, { useEffect } from 'react'
 import { Controller, useForm } from 'react-hook-form'
@@ -47,8 +46,7 @@ const PostJobs = () => {
     const {
       fn:fnCompanies,
       data:companies,
-      loading:loadingCompanies,
-      error:errorCompanies
+      loading:loadingCompanies
       }
        = useFetch(getCompanies)
   

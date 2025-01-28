@@ -8,7 +8,6 @@ import faq from '../data/faq.json'
 import {
   Card,
   CardContent,
- 
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"

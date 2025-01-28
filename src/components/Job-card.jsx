@@ -15,7 +15,7 @@ const JobCard = ({job, isMyJob= false,savedInit= false, onJobSaved= () => {}}) =
         fn:fnSavedJobs,
         data:savedJobs,
         loading:loadingSavedJobs,
-        error:errorSavedJobs}
+       }
          = useFetch(saveJob,{alreadySaved:saved})
    const {user} =  useUser()
 

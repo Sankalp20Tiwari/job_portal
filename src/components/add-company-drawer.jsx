@@ -6,7 +6,6 @@ import {
     Drawer,
     DrawerClose,
     DrawerContent,
-    DrawerDescription,
     DrawerFooter,
     DrawerHeader,
     DrawerTitle,
@@ -14,7 +13,6 @@ import {
   } from "@/components/ui/drawer"
 import { Button } from './ui/button'
 import { Input } from './ui/input'
-import { redirect } from 'react-router-dom'
 import { addNewCompany } from '@/api/apiCompanies'
 import useFetch from '@/hooks/use-fetch'
 import { BarLoader } from 'react-spinners'
@@ -34,7 +32,7 @@ const schema= z.object({
 const AddCompanyDrawer = ({fetchCompanies}) => {
 
   const {
-    register,handleSubmit,control,formState:{errors}
+    register,handleSubmit,formState:{errors}
   } = useForm({resolver:zodResolver(schema)})
 
 

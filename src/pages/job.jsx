@@ -23,7 +23,7 @@ const JobPage = () => {
   const {id} = useParams()
 
   const {
-    fn:fnJob,data:dataJob,loading:loadingJob,error:errorJob
+    fn:fnJob,data:dataJob,loading:loadingJob
   } = useFetch(getSingleJob,{job_id:id})
 
   useEffect(() => {

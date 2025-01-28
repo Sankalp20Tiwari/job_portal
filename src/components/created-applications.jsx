@@ -6,7 +6,7 @@ import { BarLoader } from 'react-spinners'
 import ApplicationCard from './application-card'
 
 const CreatedApplications = () => {
-    const{user,isLoaded} = useUser()
+    const{user} = useUser()
     const{
         loading:loadingApplications,
         data:applications,
