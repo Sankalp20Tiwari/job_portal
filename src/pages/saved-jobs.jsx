@@ -1,5 +1,5 @@
 import { getSavedJobs } from '@/api/apiJobs'
-import JobCard from '@/components/JobCard'
+import JobCard from '@/components/Job-card'
 import useFetch from '@/hooks/use-fetch'
 import { useUser } from '@clerk/clerk-react'
 import React, { useEffect } from 'react'
