@@ -32,7 +32,7 @@ const Header = () => {
         </Link>
        <div className='flex gap-8'>
         <SignedOut>
-          <Button variant='outline' onClick={() => setShowSignIn(true)}>
+          <Button variant='secondary' onClick={() => setShowSignIn(true)} className='border border-white'>
             Login
           </Button>
         </SignedOut>
