@@ -34,13 +34,13 @@ const LandingPage = () => {
           Explore thousands of job listings or find the perfect candidate 
         </p>
       </section>
-      <div className='flex gap-2 sm:gap-6 justify-center px-auto'>
+      <div className='flex gap-2 sm:gap-6 justify-center mx-auto container'>
         {/*buttons*/}
         <Link to="/jobs">
-          <Button variant='outline' size='xl'>Find Jobs</Button>
+          <Button variant='outline' size='custom' className=''>Find Jobs</Button>
         </Link>
         <Link to="/post-job">
-          <Button variant='outline' size='xl'>Post a Job</Button>
+          <Button variant='outline' size='custom'>Post a Job</Button>
         </Link>
       </div>
         {/*carousel*/}
