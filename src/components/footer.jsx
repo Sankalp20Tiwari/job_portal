@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Brand & Description */}
           <div>
-            <h2 className="text-xl font-bold text-white">Job Portal</h2>
+            <img src="/logo.png" alt="hirrd" className='h-20'/>
             <p className="mt-2 text-sm">
               Connecting job seekers with top employers worldwide.
             </p>
@@ -15,6 +15,7 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <div className="flex flex-col space-y-2">
+            <h2 className="text-xl font-semibold text-white">Quick Links</h2>
             <a href="/about" className="hover:text-white">About Us</a>
             <a href="/jobs" className="hover:text-white">Find Jobs</a>
             <a href="/contact" className="hover:text-white">Contact</a>
@@ -22,8 +23,10 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <div className="flex  flex-col space-y-2">
+          <h3 className="text-xl font-semibold text-white">Follow Us</h3>
+           <div className="flex space-x-4">
+           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="w-6 h-6 hover:text-blue-500" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -35,6 +38,7 @@ const Footer = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-6 h-6 hover:text-gray-400" />
             </a>
+           </div>
           </div>
         </div>
 
